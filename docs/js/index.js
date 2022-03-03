@@ -10,7 +10,13 @@ function loadFormPage(event) {
             lang = "Spanish";
             break;
         case "card-new":
-            lang = "Some language";
+            lang = "Some new language";
+            break;
+        case "card-4":
+            lang = "Latin";
+            break;
+        case "card-5":
+            lang = "Greek";
             break;
         default:
             lang = "a bug occurred";

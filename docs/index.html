@@ -33,13 +33,40 @@
             </div>
             <slot name="banner" class="card-img-top"><img src="img/card_banner_01.svg" alt=""></slot>
             <div class="card-body">
-                <slot name="body"></slot>
+                <slot name="body">
+                    <p>Lorem ipsum dolor sit amet</p>
+                </slot>
             </div>
             <div class="card-footer">
-                Location: <slot name="location"></slot>
+                Location: <slot name="location"><span>Somewhere</span></slot>
             </div>
         </div>
     </template>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="#">MyFirm</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="navbar-nav">
+                            <a class="nav-link" href="index.html">Home</span></a>
+                            <a class="nav-link disabled" href="course.html">Form</a>
+                            <a class="nav-link disabled" href="confirm.html">Confirm</a>
+                    </div>
+                    <form class="form-inline ms-auto">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <main class="container-xxl">
         <div class="row mx-5">
@@ -51,14 +78,7 @@
 
             <div class="col">
                 <course-card id="card-new">
-                    <img slot="image" src="https://raw.githubusercontent.com/lipis/flag-icons/main/flags/1x1/gb-eng.svg"
-                        alt="gb flag" height="24px">
-
                     <span slot="course"> Some course</span>
-
-                    <p slot="body">Lorem ipsum dolor sit amet</p>
-
-                    <span slot="location">Somewhere</span>
                 </course-card>
             </div>
 
@@ -114,8 +134,24 @@
                     <span slot="location">Geneva</span>
                 </course-card>
             </div>
+
+            <div class="col">
+                <course-card id="card-4">
+                    <span slot="course">Latin</span>
+                </course-card>
+            </div>
+
+            <div class="col">
+                <course-card id="card-5">
+                    <span slot="course">Greek</span>
+                </course-card>
+            </div>
         </div>
     </main>
+
+    <footer class="bg-dark text-center text-white p-2 mt-4">
+        <h6>© 2022 RS</h6>
+    </footer>
 </body>
 
 </html>
