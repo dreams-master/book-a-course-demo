@@ -1,14 +1,14 @@
 function isFormValid(form) {
     if (!form.checkValidity()) return false;
 
-    return true;
-
     // custom validation
 
-    // is email email
-    // does zip exist
-    
+    // ideas
+    // is email email   => pattern matching
+    // does zip exist   => lookup dataset
+    // password         => 2x the same
 
+    return true;
 }
 
 function loadConfirmPage() {
@@ -40,7 +40,6 @@ function loadConfirmPage() {
                 event.stopPropagation();
 
                 if (isFormValid(form)) {
-                    console.log("vald");
                     loadConfirmPage();
                 }
 

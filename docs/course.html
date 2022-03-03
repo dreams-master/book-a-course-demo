@@ -14,12 +14,39 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
         defer></script>
 
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/course.js" defer></script>
 
 </head>
 
 <body>
-    <main>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="#">MyFirm</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home</span></a>
+                        <a class="nav-link disabled" href="course.html">Form</a>
+                        <a class="nav-link disabled" href="confirm.html">Confirm</a>
+                    </div>
+                    <form class="form-inline ms-auto">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-xxl">
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
                 <label for="firstName" class="form-label">First name</label>
@@ -38,7 +65,7 @@
             <div class="col-md-4">
                 <label for="email" class="form-label">Email</label>
                 <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <span class="input-group-text" id="inputGroupPrepend">📧</span>
                     <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend" required>
                     <div class="invalid-feedback">
                         Please choose a username.
@@ -85,6 +112,10 @@
             </div>
         </form>
     </main>
+
+    <footer class="bg-dark text-center text-white">
+        <span>© 2022 RS</span>
+    </footer>
 </body>
 
 </html>
